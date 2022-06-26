@@ -34,7 +34,7 @@ public void drawBezier() {
 }
 
 public void setup() {
-  size(1980, 1020);
+  size(1920, 1080);
   colorMode(HSB, bands, 100, 100);
   background(0, 0, 0);
   
