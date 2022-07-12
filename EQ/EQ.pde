@@ -21,20 +21,20 @@ float h3;
 int counter = 0;
 
 public void setup() {
-  size(1920, 980);
+  fullScreen();
   colorMode(HSB, 360, 100, 100);
   background(0, 0, 0);
   
-  h1 = height/3.0;
+  h1 = 3*height/10.0;
   h2 = 2*h1;
-  h3 = height;
+  h3 = 3*h1;
   
   k *= height;
   
   // Sound and FFT
   sample = new AudioIn(this, 0);
   
-  sample.play();
+  sample.start();
    
   fft = new FFT(this, bands);
   

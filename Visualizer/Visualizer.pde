@@ -1,6 +1,6 @@
 import processing.sound.*;
 
-SoundFile sample;
+AudioIn sample;
 FFT fft;
 
 int bands = 1024;
@@ -34,13 +34,15 @@ public void drawBezier() {
 }
 
 public void setup() {
-  size(1920, 1080);
+  fullScreen();
   colorMode(HSB, bands, 100, 100);
   background(0, 0, 0);
   
   // Sound and FFT
-  sample = new SoundFile(this, "./data/sound.mp3");
-  sample.play();
+  sample = new AudioIn(this, 0);
+  
+  sample.start();
+  
   fft = new FFT(this, bands);
   fft.input(sample);
 }
@@ -58,10 +60,10 @@ public void draw() {
   
   drawBezier();
   
-  while (i < bands/8) {
-    float rad = 40*i*PI/(3*bands);
+  while (i < bands/10) {
+    float rad = 50.0*i*PI/(3*bands);
     
-    float r = fft.spectrum[i] * 100 + 105;
+    float r = 200.0*log(fft.spectrum[i]+1) + 105.0;
     
     float x = r * cos(rad);
     float y = r * sin(rad);
