@@ -1,6 +1,6 @@
 import processing.sound.*;
 
-AudioIn sample;
+SoundFile sample;
 FFT fft;
 
 int bands = 1024;
@@ -39,9 +39,9 @@ public void setup() {
   background(0, 0, 0);
   
   // Sound and FFT
-  sample = new AudioIn(this, 0);
+  sample = new SoundFile(this, "./data/sound.mp3");
   
-  sample.start();
+  sample.play();
   
   fft = new FFT(this, bands);
   fft.input(sample);
