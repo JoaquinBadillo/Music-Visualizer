@@ -11,7 +11,7 @@ To use it you just need to have an mp3 file of an audio/song you like; if you do
 
 Note: You will need to have Processing installed in your computer - [download here](https://processing.org/download).
 
-## Credits (Default song)
+**Credits (Default song)**
 **Song**: Egzod, Maestro Chives, Neoni - Royalty [NCS Release]
 
 Music provided by NoCopyrightSounds.
