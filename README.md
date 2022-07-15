@@ -22,4 +22,4 @@ Music provided by NoCopyrightSounds.
 **Watch**: [Video link](http://youtu.be/C5fLxtJH2Qs)
 
 ### EQ and Equalizer
-This are work in progress, the idea is to use an input device (like your microphone or LineIn) to acquire display a barplot of the frequency domain like one would see in an Equalizer. I'm currently working on an interface to set the colors for the EQ project, to access these settings you will need to press 'c' on your keyboard, which will change the inerface to color mode where you will be able to move sliders to change the Hue, Saturation and Brightness of the different colors used.
+This are work in progress, the idea is to use an input device (like your microphone or LineIn) to display a barplot of the frequency domain like one would see in an Equalizer. I'm currently working on an interface to set the colors for the EQ project, to access these settings you will need to press 'c' on your keyboard, which will change the inerface to color mode where you will be able to move sliders to change the Hue, Saturation and Brightness of the different colors used.
